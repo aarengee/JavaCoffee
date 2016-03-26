@@ -20,7 +20,7 @@ public class Splash_Screen extends Activity {
                 startActivity(i);
                 finish();
             }
-        }, 1500);
+        }, 3000);
 
     }
 
