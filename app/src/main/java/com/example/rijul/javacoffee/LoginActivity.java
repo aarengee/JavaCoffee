@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
             gotomainactivity();
         }
         else{
-            showMessage("Invalid credentials");
+            showMessage("Invalid credentials!");
         }
     }
     private void showMessage(String s) {
