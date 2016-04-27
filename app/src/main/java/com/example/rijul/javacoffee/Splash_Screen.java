@@ -16,11 +16,11 @@ public class Splash_Screen extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash_Screen.this, MainActivity.class);
+                Intent i = new Intent(Splash_Screen.this, LoginActivity.class);
                 startActivity(i);
                 finish();
             }
-        }, 3000);
+        }, 1500);
 
     }
 

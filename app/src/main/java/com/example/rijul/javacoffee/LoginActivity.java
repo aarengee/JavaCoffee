@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
                 String user = username.getText().toString();
                 String pass = username.getText().toString();
                 saveCred(user, pass);
-                gotomainactivity();
+                redirecttomainactivity();
             }
         });
         loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         String spPass=sharedPreferences.getString("password","null");
 
         if(spUser.equals(user1)&& spPass.equals(pass1)){
-            gotomainactivity();
+            redirecttomainactivity();
         }
         else{
             showMessage("Invalid credentials!");
@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this,s,Toast.LENGTH_SHORT).show();
     }
 
-    private void gotomainactivity() {
+    private void redirecttomainactivity() {
 
         Intent intent  = new Intent(this,MainActivity.class);
         startActivity(intent);

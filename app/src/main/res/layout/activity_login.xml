@@ -26,7 +26,7 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:id="@+id/register_button"
-        android:text="Register"
+        android:t0ext="Register"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal" />
 
